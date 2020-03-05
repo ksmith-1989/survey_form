@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./survey.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div id="Title">
+      <h1>Survey Form</h1>
+    </div>
+    <div id="description">
+      <p>Please tell us about your experience here at Vandelay Industries.</p>
+    </div>
+    <form action="" method="GET" id="survey-form">
+      <div class="name">
+        <label for="name">Enter your Name :</label>
+        <input type="text" name="name" id="name" required />
+      </div>
+      <div class="email">
+        <label for="email">Enter your Email :</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div id="age">
+        <label for="age">Age (optional) :</label>
+        <input type="text" name="number" id="number" maxlength="2" />
+      </div>
+      <div class="dropdown">
+        <label for="Role-Selct"
+          >Which option best describes your current role?</label
+        >
+        <select name="Role" id="dropdown">
+          <option value="">Select Curretn Role</option>
+          <option value="Student">Student</option>
+          <option value="Full Time Job">Full Time Job</option>
+          <option value="Full Time Learner">Full Time Learner</option>
+          <option value="Prefer not to Say">Prefer not to Say</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="recommend">
+        <label for="recommend"
+          >Would you recommend Vandelay Industries to freind?</label
+        >
+        <div>
+          <input
+            type="radio"
+            id="definitely"
+            name="reccomend"
+            value="Definitley"
+            checked
+          />
+          <label for="Definitley">Definitley</label>
+        </div>
+      </div>
+    <div>
+        <input type="radio" id="maybe" name="reccomend" value="maybe"  />
+        <label for="maybe">Maybe</label>
+    </div>
+    </div>
+    <div>
+        <input type="radio" id="Nah" name="reccomend" value="Nah"  />
+        <label for="Nah">Nah</label>
+    </div>
+    </div>
+    <div class="dropdown">
+        <label for="fave-feature">What is your favorite service at Vandelay Industries?</label>
+        <select name="Service" id="dropdown">
+            <option value="">Select Service</option>
+            <option value="architecture">Architecture</option>
+            <option value="imports">Imports</option>
+            <option value="exports">Exports</option>
+            <option value="latex">Latex</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+    <div>
+        <label for="comments">Any comments or suggestions?</label>
+        <input type="text" class="comments">
+    </div>
+      <div>
+        <input type="submit" value="submit" />
+      </div>
+    </form>
+  </body>
+</html>
